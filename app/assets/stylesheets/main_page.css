@@ -1,0 +1,13 @@
+#main_menu {
+            float: left;
+            width: 150px;
+            height: 600px;
+}
+
+ 
+
+#content {
+            float: right;
+            width: 1100px;
+            height: 600px;
+}

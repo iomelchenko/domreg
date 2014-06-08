@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Domain name:</b>
+  <%= @domain.name %>
+</p>
+
+
+<%= link_to 'Back', @domain, method: :delete, data: { confirm: 'Are you sure?' } %>
+<%= link_to 'Register now', new_order_path %>

@@ -1,0 +1,5 @@
+class NsNamesController < ApplicationController
+
+
+
+end
