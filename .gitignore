@@ -14,7 +14,5 @@
 /log/*.log
 /tmp
 
-/public/assets
-
 /config/deploy.rb
 /config/deploy
