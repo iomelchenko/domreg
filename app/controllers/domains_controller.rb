@@ -93,7 +93,7 @@ require 'net/http'
 private
 
   def check_domain_name(domain_name)
-    api_key = "7U6B736c6S6i8q6u9G73i6oQ6L8BQ"
+    api_key = Param.find_by_params('dynadot_api_key').values
     uri = URI.parse('https://api.dynadot.com')
     http = Net::HTTP.new(uri.host, uri.port)
     http.use_ssl = true

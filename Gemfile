@@ -10,6 +10,7 @@ gem 'devise', '1.4.7'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'pry'
+gem 'capistrano', '~> 3.2.0'
 
 # Gems used only for assets and not required
 # in production environments by default.
