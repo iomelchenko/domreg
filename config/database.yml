@@ -37,6 +37,6 @@ production:
   reconnect: false
   database: domreg_handbnet
   pool: 5
-  username: domreg
+  username: domreg_handbnet
   password: success32domreg
   socket: /var/run/mysqld/mysqld.sock
