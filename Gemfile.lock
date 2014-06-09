@@ -59,6 +59,7 @@ GEM
     jquery-ui-rails (4.1.2)
       railties (>= 3.1.0)
     json (1.8.1)
+    libv8 (3.3.10.4)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
@@ -115,6 +116,8 @@ GEM
       colorize
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
+    therubyracer (0.10.2)
+      libv8 (~> 3.3.10)
     thor (0.19.1)
     tilt (1.4.1)
     treetop (1.4.15)
@@ -135,10 +138,12 @@ DEPENDENCIES
   capistrano (~> 3.2.0)
   coffee-rails (~> 3.2.1)
   devise (= 1.4.7)
+  execjs
   jquery-rails
   jquery-ui-rails
   mysql2 (= 0.3.15)
   pry
   rails (= 3.2.13)
   sass-rails (~> 3.2.3)
+  therubyracer
   uglifier (>= 1.0.3)
