@@ -48,7 +48,10 @@ Domreg::Application.configure do
   # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
   #config.assets.precompile += %w( search.js )
   config.assets.precompile = [/^[a-zA-Z]*\..*/]
-  config.assets.paths << Rails.root.join("public/assets")
+
+  config.assets.enabled = true
+  config.assets.paths << "#{Rails.root}/app/public/assets"
+  #config.assets.paths << Rails.root.join("public/assets")
 
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false
