@@ -17,9 +17,9 @@ countries = [{:name => 'Afghanistan', :name_rus => ''},
              {:name => 'Antarctica', :name_rus => ''}
   	 ]
 
-countries.each do |country|
-  Country.create!(country)
-end
+#countries.each do |country|
+#  Country.create!(country)
+#end
 
 # domaine zones dictionary
 domzones  = [{:zone_name => 'com'},
