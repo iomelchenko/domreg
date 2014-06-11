@@ -9,7 +9,7 @@ Domreg::Application.configure do
   config.action_controller.perform_caching = true
 
   # Disable Rails's static asset server (Apache or nginx will already do this)
-  config.serve_static_assets = false
+  config.serve_static_assets = true
 
   # Compress JavaScripts and CSS
   config.assets.compress = true
@@ -49,7 +49,7 @@ Domreg::Application.configure do
   #config.assets.precompile += %w( search.js )
   config.assets.precompile = [/^[a-zA-Z]*\..*/]
 
-  config.assets.enabled = false
+  #config.assets.enabled = false
   #config.assets.paths << "#{Rails.root}/app/public/assets"
   #config.assets.paths << Rails.root.join("public/assets")
 
