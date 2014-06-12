@@ -37,9 +37,9 @@ domzones  = [{:zone_name => 'com'},
              {:zone_name => 'biz'},
              {:zone_name => 'tv'}
   	 ]
-domzones.each do |zone|
-  DomainZone.create!(zone)
-end
+#domzones.each do |zone|
+#  DomainZone.create!(zone)
+#end
 
 # domaine states dictionary
 domstates  = [{:state_name => 'checked'},
@@ -48,12 +48,12 @@ domstates  = [{:state_name => 'checked'},
              {:state_name => 'postponed'},
              {:state_name => 'inactive'},
      ]
-domstates.each do |state|
-  DomainState.create!(state)
-end
+#domstates.each do |state|
+#  DomainState.create!(state)
+#end
 
 params  = [{:params => 'dynadot_api_key', :values => '7U6B736c6S6i8q6u9G73i6oQ6L8BQ'}
      ]
-params.each do |param|
-  Param.create!(param)
-end
+#params.each do |param|
+#  Param.create!(param)
+#end
