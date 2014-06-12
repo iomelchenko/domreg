@@ -16,7 +16,7 @@ gem 'capistrano', '~> 3.2.0'
 # in production environments by default.
 group :assets do
 
-  gem "sass", "~> 3.2.5"
+  gem "sass"#, "~> 3.2.5"
   gem 'sass-rails'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
