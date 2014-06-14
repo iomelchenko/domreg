@@ -1,16 +1,18 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.13'
+gem 'rails',          '3.2.13'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql2', '0.3.15'
-gem 'devise', '1.4.7'
-gem 'jquery-rails'
+gem 'mysql2',         '0.3.15'
+gem 'devise',         '1.4.7'
+gem 'jquery-rails',   '~> 2.3.0'
 gem 'jquery-ui-rails'
 gem 'pry'
-gem 'capistrano', '~> 3.2.0'
+gem 'capistrano',     '~> 3.2.0'
+gem 'activeadmin'
+gem "meta_search",    '>= 1.1.0.pre'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -18,7 +20,7 @@ group :assets do
 
   gem "sass"#, "~> 3.2.5"
   gem 'sass-rails'
-
+  gem 'coffee-rails'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
 
