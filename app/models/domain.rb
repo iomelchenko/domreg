@@ -8,4 +8,5 @@ class Domain < ActiveRecord::Base
 
 
   validates  :name, :domain_zone_id, presence: true  
+  validates_uniqueness_of :name, :scope => [:user_id, :domain_zone_id]
 end

@@ -1,1 +1,3 @@
-domreg
+temporary location:
+
+http://handbk.net

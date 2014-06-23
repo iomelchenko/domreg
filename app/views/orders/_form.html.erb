@@ -16,7 +16,7 @@
   </div>
   <div class="field">
     <%= f.label :email %><br />
-    <%= f.text_field :email %>
+    <%= f.email_field :email %>
   </div>
   <div class="field">
     <%= f.label :first_name %><br />
@@ -52,7 +52,7 @@
   </div> 
   <div class="field">
     <%= f.label :alternative_email %><br />
-    <%= f.text_field :alternative_email %>
+    <%= f.email_field :alternative_email %>
   </div> 
   <div class="field">
     <%= f.label :fax %><br />
@@ -64,7 +64,7 @@
   </div>   
   <div class="field">
     <%= f.label :price %><br />
-    <%= f.text_field :price %>
+    <%= f.text_field :price, readonly: true %>
   </div>   
 
   <%= f.hidden_field :user_id, value: @order.user_id %>      

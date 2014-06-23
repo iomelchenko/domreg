@@ -15,7 +15,8 @@ class User < ActiveRecord::Base
 
   belongs_to :country
   belongs_to :ns_name
-  belongs_to :balance
+  has_many   :balances
+  has_many   :documents
   has_many   :domains
   has_many   :orders
 

@@ -22,20 +22,20 @@ countries = [{:name => 'Afghanistan', :name_rus => ''},
 #end
 
 # domaine zones dictionary
-domzones  = [{:zone_name => 'com'},
-             {:zone_name => 'net'},
-             {:zone_name => 'org'},
-             {:zone_name => 'me'},
-             {:zone_name => 'us'},
-             {:zone_name => 'ca'},
-             {:zone_name => 'in'},
-             {:zone_name => 'cn'},
-             {:zone_name => 'im'},
-             {:zone_name => 'info'},
-             {:zone_name => 'mx'},
-             {:zone_name => 'sx'},
-             {:zone_name => 'biz'},
-             {:zone_name => 'tv'}
+domzones  = [{:zone_name => 'com', :price => 10.0},
+             {:zone_name => 'net', :price => 10.0},
+             {:zone_name => 'org', :price => 10.0},
+             {:zone_name => 'me', :price => 10.0},
+             {:zone_name => 'us', :price => 10.0},
+             {:zone_name => 'ca', :price => 10.0},
+             {:zone_name => 'in', :price => 10.0},
+             {:zone_name => 'cn', :price => 10.0},
+             {:zone_name => 'im', :price => 10.0},
+             {:zone_name => 'info', :price => 10.0},
+             {:zone_name => 'mx', :price => 10.0},
+             {:zone_name => 'sx', :price => 10.0},
+             {:zone_name => 'biz', :price => 10.0},
+             {:zone_name => 'tv', :price => 10.0}
   	 ]
 #domzones.each do |zone|
 #  DomainZone.create!(zone)
@@ -52,7 +52,9 @@ domstates  = [{:state_name => 'checked'},
 #  DomainState.create!(state)
 #end
 
-params  = [{:params => 'dynadot_api_key', :values => '7U6B736c6S6i8q6u9G73i6oQ6L8BQ'}
+params  = [{:params => 'dynadot_api_key', :values => '7U6B736c6S6i8q6u9G73i6oQ6L8BQ'},
+           {:params => 'ns1_default', :values => 'ns1.uhost.com.ua'},
+           {:params => 'ns2_default', :values => 'ns2.uhost.com.ua'}
      ]
 #params.each do |param|
 #  Param.create!(param)

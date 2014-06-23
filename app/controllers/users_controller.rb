@@ -11,7 +11,7 @@ class UsersController < ApplicationController
 
     @ns_names = NsName.where(user_id: current_user.id)
 
-    @balance = Balance.where(user_id: current_user.id).order(:created_at)
+    @balance = Balance.where(user_id: current_user.id).last
 
     respond_to do |format|
       format.html # index.html.erb

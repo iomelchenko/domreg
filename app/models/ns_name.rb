@@ -8,7 +8,7 @@ class NsName < ActiveRecord::Base
 
   private
     def default_values
-      self.ns1 ||= 'ns1.hostfabrica.ru'
-      self.ns2 ||= 'ns2.hostfabrica.ru'
+      self.ns1 ||= Param.find_by_params('ns1_default').values
+      self.ns2 ||= Param.find_by_params('ns2_default').values
     end
 end
